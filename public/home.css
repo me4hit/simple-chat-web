@@ -1,0 +1,44 @@
+html, 
+body{
+    background-color: #E0E2DB;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options{
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #72A1E5;
+    color: whitesmoke;
+    border-radius: 20px;
+}
+span{
+    text-align: center;
+}
+
+.numberinput{
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+}
+.btn-cricle{
+    margin-top: 7px;
+    display:block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid wheat;
+}
