@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const port = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000
 const http = require('http').Server(app);
 global.io = require('socket.io')(http);
 
@@ -32,6 +32,6 @@ app.get('/room', (req, res) => { // home page
 require('./socketcontroller').on()
 
 
-http.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+http.listen(PORT, () => {
+  console.log(`Example app listening at http://localhost:${PORT}`)
 })
