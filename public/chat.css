@@ -1,0 +1,26 @@
+.content-chat {
+  overflow: auto;
+}
+.me {
+  float: right;
+  margin-right: 10px;
+  border-radius: 10px 15px 2px 15px;
+}
+.you {
+  float: left;
+  margin-left: 10px;
+  border-radius: 15px 10px 15px 2px;
+
+}
+.content-mess {
+  display: flex;
+  max-width: 500px;
+  word-wrap: break-word;
+  flex-direction: column;
+  text-align: left;
+  display: inline-block;
+  background: #538efd;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px 5px 9px;
+  margin-top: 2px;
+}

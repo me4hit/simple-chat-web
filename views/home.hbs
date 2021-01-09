@@ -19,50 +19,35 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src='home.js'></script>
-    <script src="/socket.io/socket.io.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-    <script>
-        var socket = io()
-    </script>
 </head>
 
 <body>
     <div class="container">
-        <div class="options" onclick="openModal()">
-            <span>
-                Tạo phòng chat mới
-            </span>
-        </div>
-
-        <div class="options">
+        <div class="options" onclick="openModalJoinRoom()">
             <span>
                 Gia nhập phòng chat
             </span>
         </div>
     </div>
 
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+    <div class="modal fade" id="exampleModalCenterJoinchat" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content" style="width: 400px;">
+            <div class="modal-content" style="width: 300px;">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Điền mã phòng muốn tạo</h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Gia nhập phòng chat</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="d-flex flex-row">
-                        <input id="numberinput1" type="text" placeholder="" class="numberinput ">
-                        <input id="numberinput2" type="text" placeholder="" class="numberinput">
-                        <input id="numberinput3" type="text" placeholder="" class="numberinput">
-                        <input id="numberinput4" type="text" placeholder="" class="numberinput">
-                        <button class="btn-cricle" id="btn-generateid"><i class="fas fa-sync"></i></button>
+                    <div class="d-flex justify-content-center">
+                        <input id="input-romid" type="text" placeholder="" class=" " style="width: 280px;">
                     </div>
                 </div>
                 <div class="modal-footer">
-                       <button id="btn-joinroom" type="button" class="btn btn-primary">Vào phòng</button>
+                    <button id="btn-joinroom" type="button" class="btn btn-primary">Vào phòng</button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,28 @@
+html,body{
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    background-color: teal;
+
+}
+
+.content-chat{
+    height: 600px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.btn-cricle{
+    margin-top: 7px;
+    display:block;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid wheat;
+}
+
+.input-text{
+    width: 95%;
+}
